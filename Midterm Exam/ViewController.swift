@@ -92,6 +92,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func infoButton(_ sender: Any) {
         
+        performSegue(withIdentifier: "1.4", sender: self)
+        
     }
 
 }

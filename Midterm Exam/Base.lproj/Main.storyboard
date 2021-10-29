@@ -9,6 +9,68 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controllerinfo Page-->
+        <scene sceneID="1vh-ra-duI">
+            <objects>
+                <viewController id="JPh-kj-yBp" customClass="ViewControllerinfoPage" customModule="Midterm_Exam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Hk-42-Soa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3i-ey-zCh">
+                                <rect key="frame" x="19" y="20" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="infoBackButton:" destination="JPh-kj-yBp" eventType="touchUpInside" id="oy1-1c-J6y"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-5z-9yq">
+                                <rect key="frame" x="164" y="492" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="infoSwitch:" destination="JPh-kj-yBp" eventType="valueChanged" id="cNs-tF-a4I"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INFO PAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQB-EE-d7n">
+                                <rect key="frame" x="16" y="84" width="340" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NL-rd-rov">
+                                <rect key="frame" x="67" y="144" width="240" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <string key="text">What I enjoy about this class, is that a lot of the work is largely independent work that allows you to be creative and causes you think critcally about the logic behind the code that you're writing. It makes things fun, but also a little challenging cause you constantly have to assess your understanding. What I don't like quite as much is that sometimes it feels like we're moving too slow in class, and largely due to lapses in understanding for the other students. But that's a necessary evil. :)</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-Kw-6e7">
+                                <rect key="frame" x="67" y="547" width="240" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Favorite Motie"/>
+                                <connections>
+                                    <action selector="movButton:" destination="JPh-kj-yBp" eventType="touchUpInside" id="3Se-0o-FOb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xOM-aX-dM8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gNL-fc-Z4M"/>
+                    <connections>
+                        <outlet property="infoSwitchOutlet" destination="G3m-5z-9yq" id="Hk4-Dc-dHD"/>
+                        <outlet property="textBox" destination="0NL-rd-rov" id="1ni-xv-YPQ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="4.1" id="cgT-WU-JZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMx-0w-Iy3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="-666.11694152923542"/>
+        </scene>
         <!--View Controller Page3-->
         <scene sceneID="0t1-Jg-XBN">
             <objects>
@@ -92,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXA-WG-PkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.79999999999995" y="-565.36731634182911"/>
+            <point key="canvasLocation" x="745" y="-600"/>
         </scene>
         <!--1.3-->
         <scene sceneID="tne-QT-ifu">
@@ -174,6 +236,7 @@
                         <outlet property="nameText" destination="nKy-mr-F8n" id="lsV-ZF-8cI"/>
                         <segue destination="KAJ-0l-Yqx" kind="show" identifier="1.2" id="aAN-zL-578"/>
                         <segue destination="Hb9-Mc-mB0" kind="show" identifier="1.3" id="7oe-5l-DOn"/>
+                        <segue destination="JPh-kj-yBp" kind="show" identifier="1.4" id="1wq-I9-hFI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -257,16 +320,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYK-za-DjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.79999999999995" y="92.203898050974516"/>
+            <point key="canvasLocation" x="1082" y="21"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xTh-PF-ror"/>
+        <segue reference="cgT-WU-JZc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
