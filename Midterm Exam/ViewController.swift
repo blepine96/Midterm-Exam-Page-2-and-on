@@ -86,6 +86,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func nextButton(_ sender: Any) {
+        performSegue(withIdentifier: "1.3", sender: self)
         
     }
 
